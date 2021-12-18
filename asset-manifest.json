@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/wassieworld/static/css/main.67c88f01.chunk.css",
+    "main.js": "/wassieworld/static/js/main.26bb8608.chunk.js",
+    "main.js.map": "/wassieworld/static/js/main.26bb8608.chunk.js.map",
+    "runtime-main.js": "/wassieworld/static/js/runtime-main.fa199e8e.js",
+    "runtime-main.js.map": "/wassieworld/static/js/runtime-main.fa199e8e.js.map",
+    "static/js/2.25414b17.chunk.js": "/wassieworld/static/js/2.25414b17.chunk.js",
+    "static/js/2.25414b17.chunk.js.map": "/wassieworld/static/js/2.25414b17.chunk.js.map",
+    "static/js/3.7d1d957e.chunk.js": "/wassieworld/static/js/3.7d1d957e.chunk.js",
+    "static/js/3.7d1d957e.chunk.js.map": "/wassieworld/static/js/3.7d1d957e.chunk.js.map",
+    "index.html": "/wassieworld/index.html",
+    "static/css/main.67c88f01.chunk.css.map": "/wassieworld/static/css/main.67c88f01.chunk.css.map",
+    "static/js/2.25414b17.chunk.js.LICENSE.txt": "/wassieworld/static/js/2.25414b17.chunk.js.LICENSE.txt",
+    "static/media/about.8c77d988.png": "/wassieworld/static/media/about.8c77d988.png",
+    "static/media/aboutLL.8c07d9de.png": "/wassieworld/static/media/aboutLL.8c07d9de.png",
+    "static/media/bluelily.0236e2c6.png": "/wassieworld/static/media/bluelily.0236e2c6.png",
+    "static/media/countdowntomint.6ebd0559.png": "/wassieworld/static/media/countdowntomint.6ebd0559.png",
+    "static/media/discordlogoblack.78884197.png": "/wassieworld/static/media/discordlogoblack.78884197.png",
+    "static/media/roadmapLL.6bdc0866.png": "/wassieworld/static/media/roadmapLL.6bdc0866.png",
+    "static/media/solanalogoblack.a562efa0.png": "/wassieworld/static/media/solanalogoblack.a562efa0.png",
+    "static/media/teamwassieLL.8b79fb25.png": "/wassieworld/static/media/teamwassieLL.8b79fb25.png",
+    "static/media/timerbox.55d76078.png": "/wassieworld/static/media/timerbox.55d76078.png",
+    "static/media/twitterlogoblack.1b7d4334.png": "/wassieworld/static/media/twitterlogoblack.1b7d4334.png",
+    "static/media/utilityLL.d423e9de.png": "/wassieworld/static/media/utilityLL.d423e9de.png",
+    "static/media/wassie1.03b38f1e.png": "/wassieworld/static/media/wassie1.03b38f1e.png",
+    "static/media/wassietext.d18f3d96.png": "/wassieworld/static/media/wassietext.d18f3d96.png",
+    "static/media/wassieworld.d18f3d96.png": "/wassieworld/static/media/wassieworld.d18f3d96.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fa199e8e.js",
+    "static/js/2.25414b17.chunk.js",
+    "static/css/main.67c88f01.chunk.css",
+    "static/js/main.26bb8608.chunk.js"
+  ]
+}
