@@ -6,7 +6,10 @@ import Landing from "./components/landing/landing.js"
 function App() {
   return (
     <>
-      <Landing/>
+      <Header />
+      <Landing />
+
+
       
     </>
   )

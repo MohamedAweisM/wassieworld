@@ -9,7 +9,7 @@ import styles from "./header.scss";
 
 const Header = () => {
     return (
-        <>
+        <div className="container">
            <div className="header">
                <div className="header__left">
                    <img className="header__left--title" src={wassieworld} />
@@ -24,7 +24,9 @@ const Header = () => {
                     </a>
                </div>
            </div> 
-        </>
+        </div>
+        
     )
 }
 
+export default Header
