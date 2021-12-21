@@ -48,8 +48,10 @@ const Landing = () => {
     <div className={styles.container}>
       <div className={styles.content}>
         {/* <img className="landing-top__logo" src={wassie} /> */}
+        <div className={styles.wrapper}>
         <img className={styles.timerTitle} src={mint} />
         <div className={styles.timer}>{countdownString}</div>
+        </div>
         <img className={styles.wassie} src={bigwassie} />
       </div>
     </div>
