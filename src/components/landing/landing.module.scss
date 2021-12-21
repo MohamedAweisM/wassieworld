@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url(../../fonts/Reglisse-0WOD9.otf);
+    font-style: normal;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  // background-color: #07061d;
+  // color: white;
+  justify-content: space-between;
+  height: 85%;
+
+  // @media (min-width: 768px) {
+  //   min-height: auto;
+  // }
+}
+
+.content {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // @media (min-width: 768px) {
+  //   flex-direction: row;
+  //   margin:  -60px 32px 0;
+  // }
+
+  // @media (min-width: 1024px) {
+  //   margin-top: -50px;
+  // }
+}
+
+.timerTitle {
+  width: 250px;
+}
+
+.timer {
+    display: flex;
+    background-image: url(../../assets/icons/timerboxcrop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 110px;
+    text-align: center;
+    font-size: 32px;
+    align-items: center;
+    font-family: "MyFont";
+    color: black;
+    width: 250px;
+    justify-content: center;
+
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+    min-width: 305px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 72px;
+    min-width: 435px;
+  }
+}
+
+.wassie {
+        width: 85%;
+        position: relative;
+        // bottom: -3px;
+        // margin-top: auto;
+      
+        @media (min-width: 768px) {
+          margin: unset;
+          width: 320px;
+        }
+}

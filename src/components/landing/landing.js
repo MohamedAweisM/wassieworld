@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 import countdown from "../../assets/icons/timerbox.png";
-import mint from "../../assets/texts/countdowntomint.png"
+import mint from "../../assets/texts/countdowntomint.png";
 import wassie from "../../assets/icons/wassietext.png";
 import wassieone from "../../assets/wassies/aboutLL.png";
 import wassietwo from "../../assets/wassies/roadmapLL.png";
@@ -9,13 +9,14 @@ import wassiethree from "../../assets/wassies/teamwassieLL.png";
 import wassiefour from "../../assets/wassies/utilityLL.png";
 import bigwassie from "../../assets/wassies/wassie2.png";
 
-import styles from "./landing.scss"
+import styles from "./landing.module.scss";
 
 const Landing = () => {
-  const formatNumber = (number) => number.toLocaleString('en-US', { minimumIntegerDigits: 2 });
+  const formatNumber = (number) =>
+    number.toLocaleString("en-US", { minimumIntegerDigits: 2 });
 
   const getTimeLeft = () => {
-    const releaseDate = new Date('Jan 7 2022 15:00');
+    const releaseDate = new Date("Jan 7 2022 15:00");
     const difference = releaseDate - new Date();
 
     if (difference > 0) {
@@ -27,11 +28,11 @@ const Landing = () => {
       };
     }
 
-    return { days: '00', hours: '00', minutes: '00', seconds: '00' };
+    return { days: "00", hours: "00", minutes: "00", seconds: "00" };
   };
 
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
-  
+
   useEffect(() => {
     setTimeout(() => {
       setTimeLeft(getTimeLeft());
@@ -43,37 +44,27 @@ const Landing = () => {
   const { days, hours, minutes, seconds } = timeLeft;
   const countdownString = `${days} Days ${hours}:${minutes}:${seconds}`;
 
-
-
-    return (
-      
-      <div className="container">
-      <div className="content">
+  return (
+    <div className={styles.container}>
+      <div className={styles.content}>
         {/* <img className="landing-top__logo" src={wassie} /> */}
-        <img className="landing-top__title" src={mint} />
-        <div className="landing-top__timer">{countdownString}</div>
-     
-        <div className='wassie'>
-          <img className='wassie__img' src={bigwassie}/>
-        </div>
+        <img className={styles.timerTitle} src={mint} />
+        <div className={styles.timer}>{countdownString}</div>
+        <img className={styles.wassie} src={bigwassie} />
       </div>
-      </div>
-      
-      // <div className="landing-bottom">
-      //   <img className="landing-bottom__about" src={wassieone} />
+    </div>
 
-      //   <img className="landing-bottom__roadmap" src={wassietwo} />
-        
-      //   <img className="landing-bottom__utility" src={wassiethree} />
+    // <div className="landing-bottom">
+    //   <img className="landing-bottom__about" src={wassieone} />
 
-      //   <img className="landing-bottom__team" src={wassiefour} />
+    //   <img className="landing-bottom__roadmap" src={wassietwo} />
 
-        
-      // </div> 
-      
-      
+    //   <img className="landing-bottom__utility" src={wassiethree} />
 
-    )
-}
+    //   <img className="landing-bottom__team" src={wassiefour} />
 
-export default Landing
+    // </div>
+  );
+};
+
+export default Landing;
