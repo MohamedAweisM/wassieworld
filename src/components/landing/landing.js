@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import countdown from "../../assets/icons/timerbox.png";
+import countdown from "../../assets/icons/timerboxcrop.png";
 import mint from "../../assets/texts/countdowntomint.png";
 import wassie from "../../assets/icons/wassietext.png";
 import wassieone from "../../assets/wassies/aboutLL.png";
@@ -48,9 +48,12 @@ const Landing = () => {
     <div className={styles.container}>
       <div className={styles.content}>
         {/* <img className="landing-top__logo" src={wassie} /> */}
-        <div className={styles.wrapper}>
-        <img className={styles.timerTitle} src={mint} />
-        <div className={styles.timer}>{countdownString}</div>
+        <div className={styles.countdownWrapper}>
+          <img className={styles.timerTitle} src={mint} />
+          <div className={styles.timerWrapper}>
+            <span className={styles.timer}>{countdownString}</span>
+            <img className={styles.timerBg} src={countdown}></img>
+          </div>
         </div>
         <img className={styles.wassie} src={bigwassie} />
       </div>
