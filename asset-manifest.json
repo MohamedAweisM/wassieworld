@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/wassieworld/static/css/main.5a6a5b83.chunk.css",
-    "main.js": "/wassieworld/static/js/main.415b0a25.chunk.js",
-    "main.js.map": "/wassieworld/static/js/main.415b0a25.chunk.js.map",
-    "runtime-main.js": "/wassieworld/static/js/runtime-main.fa199e8e.js",
-    "runtime-main.js.map": "/wassieworld/static/js/runtime-main.fa199e8e.js.map",
-    "static/js/2.df4e0e3a.chunk.js": "/wassieworld/static/js/2.df4e0e3a.chunk.js",
-    "static/js/2.df4e0e3a.chunk.js.map": "/wassieworld/static/js/2.df4e0e3a.chunk.js.map",
-    "static/js/3.7d1d957e.chunk.js": "/wassieworld/static/js/3.7d1d957e.chunk.js",
-    "static/js/3.7d1d957e.chunk.js.map": "/wassieworld/static/js/3.7d1d957e.chunk.js.map",
+    "main.css": "/wassieworld/static/css/main.9def3f7b.chunk.css",
+    "main.js": "/wassieworld/static/js/main.882df2b3.chunk.js",
+    "main.js.map": "/wassieworld/static/js/main.882df2b3.chunk.js.map",
+    "runtime-main.js": "/wassieworld/static/js/runtime-main.3bdb569d.js",
+    "runtime-main.js.map": "/wassieworld/static/js/runtime-main.3bdb569d.js.map",
+    "static/js/2.760cb3e8.chunk.js": "/wassieworld/static/js/2.760cb3e8.chunk.js",
+    "static/js/2.760cb3e8.chunk.js.map": "/wassieworld/static/js/2.760cb3e8.chunk.js.map",
+    "static/js/3.59c705f7.chunk.js": "/wassieworld/static/js/3.59c705f7.chunk.js",
+    "static/js/3.59c705f7.chunk.js.map": "/wassieworld/static/js/3.59c705f7.chunk.js.map",
     "index.html": "/wassieworld/index.html",
-    "static/css/main.5a6a5b83.chunk.css.map": "/wassieworld/static/css/main.5a6a5b83.chunk.css.map",
-    "static/js/2.df4e0e3a.chunk.js.LICENSE.txt": "/wassieworld/static/js/2.df4e0e3a.chunk.js.LICENSE.txt",
-    "static/media/landing.module.scss": "/wassieworld/static/media/timerboxcrop.88511b4e.png",
+    "static/css/main.9def3f7b.chunk.css.map": "/wassieworld/static/css/main.9def3f7b.chunk.css.map",
+    "static/js/2.760cb3e8.chunk.js.LICENSE.txt": "/wassieworld/static/js/2.760cb3e8.chunk.js.LICENSE.txt",
+    "static/media/landing.module.scss": "/wassieworld/static/media/Reglisse-0WOD9.4320a564.otf",
     "static/media/aboutLL.8c07d9de.png": "/wassieworld/static/media/aboutLL.8c07d9de.png",
     "static/media/countdowntomint.2fddccbd.png": "/wassieworld/static/media/countdowntomint.2fddccbd.png",
     "static/media/discordlogoblack.78884197.png": "/wassieworld/static/media/discordlogoblack.78884197.png",
     "static/media/roadmapLL.6bdc0866.png": "/wassieworld/static/media/roadmapLL.6bdc0866.png",
     "static/media/solanalogoblack.a562efa0.png": "/wassieworld/static/media/solanalogoblack.a562efa0.png",
     "static/media/teamwassieLL.8b79fb25.png": "/wassieworld/static/media/teamwassieLL.8b79fb25.png",
-    "static/media/timerbox.55d76078.png": "/wassieworld/static/media/timerbox.55d76078.png",
+    "static/media/timerboxcrop.88511b4e.png": "/wassieworld/static/media/timerboxcrop.88511b4e.png",
     "static/media/twitterlogoblack.1b7d4334.png": "/wassieworld/static/media/twitterlogoblack.1b7d4334.png",
     "static/media/utilityLL.d423e9de.png": "/wassieworld/static/media/utilityLL.d423e9de.png",
     "static/media/wassie2.211c5be2.png": "/wassieworld/static/media/wassie2.211c5be2.png",
@@ -27,9 +27,9 @@
     "static/media/wassieworld.d18f3d96.png": "/wassieworld/static/media/wassieworld.d18f3d96.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.fa199e8e.js",
-    "static/js/2.df4e0e3a.chunk.js",
-    "static/css/main.5a6a5b83.chunk.css",
-    "static/js/main.415b0a25.chunk.js"
+    "static/js/runtime-main.3bdb569d.js",
+    "static/js/2.760cb3e8.chunk.js",
+    "static/css/main.9def3f7b.chunk.css",
+    "static/js/main.882df2b3.chunk.js"
   ]
 }
