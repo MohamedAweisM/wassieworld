@@ -10,7 +10,6 @@ export const useSolana = () => {
 
   const getPhantom = () => {
     checkForPhantom = !checkForPhantom && setInterval(() => {
-      console.log({ phantom, attempts});
       const { solana } = window as any;
       if (solana && solana?.isPhantom) {
         setPhantom(solana);
