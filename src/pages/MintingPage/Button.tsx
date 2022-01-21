@@ -13,14 +13,20 @@ import {
 } from './lib/state-helpers';
 import { awaitTransactionSignatureConfirmation } from './lib/connection';
 import { CandyMachineAccount } from './models';
+import { useSolana } from './hooks/useSolana';
 
-const Button = ({ cluster, connection, candyMachine, updateCandyMachine }: {
+const Button = ({
+  cluster,
+  connection,
+  candyMachine,
+  updateCandyMachine,
+}: {
   cluster: string | undefined,
   connection: Connection | undefined,
   candyMachine: CandyMachineAccount | undefined,
   updateCandyMachine: (candyMachine: CandyMachineAccount) => void,
 }) => {
-  const solana = (window as any).solana;
+  const { solana } = useSolana();
   const [user, setUser] = useRecoilState(userStore);
   
   const [isMinting, setIsMinting] = useState(false);
@@ -121,7 +127,7 @@ const Button = ({ cluster, connection, candyMachine, updateCandyMachine }: {
   const walletConnect = !isSoldOut && solana && !user.walletPublicKey;
   const waitForPublic = !isSoldOut && solana && user.walletPublicKey && !isActive && !userWhitelisted;
   const insufficientFunds = !soldOut && solana && user.walletPublicKey && (isActive || userWhitelisted) && user.userBalance < price;
-  const readyToMint = !isSoldOut && solana && user.walletPublicKey && (isActive || userWhitelisted);
+  const readyToMint = !(user.userBalance < price) && !isSoldOut && solana && user.walletPublicKey && (isActive || userWhitelisted);
 
   return (
     <div className="flex flex-col">
