@@ -21,6 +21,7 @@ import Button from './Button';
 import CardHeader from './CardHeader';
 import './index.css';
 import { CandyMachineAccount } from './models';
+import { useSolana } from './hooks/useSolana';
 
 /***********************************/
 // Customise the app by changing the following variables.
@@ -45,8 +46,7 @@ const MintingPage = () => {
   const [connection, setConnection] = useState<Connection | undefined>(undefined);
   const [candyMachine, setCandyMachine] = useState<CandyMachineAccount | undefined>(undefined);
 
-  const itemsRedeemed = candyMachine?.state?.itemsRedeemed;
-  const itemsAvailable = candyMachine?.state?.itemsAvailable;
+  const { solana, solanaFail } = useSolana();
 
   const checkEnvError = () => {
     // Check if populated
@@ -70,7 +70,7 @@ const MintingPage = () => {
     }
     return false;
   }
-
+    
   const getUserInfo = async ({
     solana, connection, candyMachine
   }: {
@@ -86,41 +86,48 @@ const MintingPage = () => {
       connection,
       candyMachine?.state.whitelistMintSettings?.mint,
     ) : undefined;
+
     const newUser = {
       walletPublicKey,
       ...(userBalance && { userBalance }),
       ...(isWhiteListed && { isWhiteListed }),
     };
-    setUser({ ...user, ...newUser });
+    return { ...user, ...newUser };
   };
-
+      
   useEffect(() => {
     const isEnvError = checkEnvError();
     if (isEnvError) {
       setEnvError(true);
       setSiteLoading(false);
-      return;
     }
-
-    const { solana } = window as any;
-    const connection = new Connection(rpcUrl as string);
-    const candyMachinePublicKey = new web3.PublicKey(candyMachineId as string);
-    const provider = new Provider(connection, solana, opts.preflightCommitment as web3.ConfirmOptions);
-
-    (async () => {
-      const candyMachine = await getCandyMachineState(candyMachinePublicKey, provider);
-      await getUserInfo({ solana, connection, candyMachine });
-      setCandyMachine(candyMachine);
-    })();
-
-    setConnection(connection);
-    setSiteLoading(false);
   }, []);
 
+  useEffect(() => {
+    if (solana || solanaFail) {
+      const connection = new Connection(rpcUrl as string);
+      const candyMachinePublicKey = new web3.PublicKey(candyMachineId as string);
+      const provider = new Provider(connection, solana, opts.preflightCommitment as web3.ConfirmOptions);
+      
+      (async () => {
+        const candyMachine = await getCandyMachineState(candyMachinePublicKey, provider);
+        const user = await getUserInfo({ solana, connection, candyMachine });
+        setCandyMachine(candyMachine);
+        setUser(user);
+      })();
+      
+      setConnection(connection);
+      setSiteLoading(false);
+    }
+  }, [solana, solanaFail]);
+    
   const updateCandyMachine = (newCandyMachine: CandyMachineAccount) => {
     setCandyMachine(newCandyMachine);
   };
 
+  const itemsRedeemed = candyMachine?.state?.itemsRedeemed;
+  const itemsAvailable = candyMachine?.state?.itemsAvailable;
+    
   return (
     <div className="page-container h-full bg-blue-100">
       {/* <!-- Error section --> */}
