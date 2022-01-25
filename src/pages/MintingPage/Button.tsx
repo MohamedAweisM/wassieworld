@@ -126,7 +126,12 @@ const Button = ({
   const getPhantom = !isSoldOut && !solana;
   const walletConnect = !isSoldOut && solana && !user.walletPublicKey;
   const waitForPublic = !isSoldOut && solana && user.walletPublicKey && !isActive && !userWhitelisted;
-  const insufficientFunds = !soldOut && solana && user.walletPublicKey && (isActive || userWhitelisted) && user.userBalance < price;
+  const insufficientFunds =
+    !soldOut &&
+    solana &&
+    user.walletPublicKey &&
+    (isActive || userWhitelisted) &&
+    (userWhitelisted ? user.userBalance < whitelistPrice : user.userBalance < price);
   const readyToMint = !(user.userBalance < price) && !isSoldOut && solana && user.walletPublicKey && (isActive || userWhitelisted);
 
   return (
