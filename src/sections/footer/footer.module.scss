@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 32px;
+  background: rgba(255, 255, 255, 0.3);;
+}
+
+.wwLogo {
+  height: 40px;
+}
+
+.socialLinks {
+  display: flex;
+  align-items: center;
+
+  > * {
+    margin-left: 16px;
+  }
+}
+
+.socialIcon {
+  height: 20px;
+}
