@@ -22,8 +22,8 @@ const About = () => {
             This NFT collection lives on the <span>Solana</span> blockchain and it provides holders
             with a <span>safe</span> (fully doxxed team), <span>affordable</span> (only 0.66 SOL + extremely
             low gas fee) and <span>easy</span> (we will walk you through buying process) entry
-            into the NFT space. <a href='https://discord.gg/VWKcFRKdjK' target="_blank" rel="noreferrer">
-            <span>Join our discord for more info!</span></a>
+            into the NFT space. Join our <a href='https://discord.gg/VWKcFRKdjK' target="_blank" rel="noreferrer">
+            <span>discord</span></a> for more info!
           </p>
         </div>
       </div>
