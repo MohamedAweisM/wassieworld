@@ -4,8 +4,8 @@
   color: #252930;
   background: linear-gradient(to bottom, 
   #dbeafe 0%, 
-  rgba(0,0,0,0) 10%, 
-  rgba(0,0,0,0)  90%, 
+  #dbeafe00 10%, 
+  #dbeafe00 90%, 
   #dbeafe 100%), url(../../assets/aboutBG.png);
   background-position: bottom;
   background-size: cover;
@@ -19,9 +19,9 @@
   @include desktop {
     background: linear-gradient(to bottom, 
     #dbeafe 0%, 
-    rgba(0,0,0,0) 15%, 
-    rgba(0,0,0,0)  85%, 
-    #dbeafe 100%), url(../../assets/aboutBG.png);
+    #dbeafe00 15%, 
+    #dbeafe00 85%, 
+      #dbeafe 100%), url(../../assets/aboutBG.png);
     background-position: bottom;
     background-size: cover;
   }
