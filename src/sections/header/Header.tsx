@@ -27,10 +27,16 @@ const Header = () => {
           <a> Team </a> */}
         </div>
         <div className={styles.headerRight}>
-          <a href="https://twitter.com/Wassieworld">
+          <a
+            href="https://twitter.com/Wassieworld"
+            target="_blank"
+            rel="noreferrer">
             <img className={styles.socialIcon} src={twitterLogo} alt="Twitter logo"/>
           </a>
-          <a href="https://discord.gg/VWKcFRKdjK">
+          <a
+            href="https://discord.gg/VWKcFRKdjK"
+            target="_blank"
+            rel="noreferrer">
             <img className={styles.socialIcon} src={discordLogo} alt="Discord logo"/>
           </a>
           <WalletConnect />

@@ -42,7 +42,7 @@ const Hero = ({
 
           <div className={styles.heroRight}>
             <p className={styles.description}>
-              3,333 Randomly Generated 3D Wassies! Wassie World is a 
+              3,333 Randomly Generated 3D Wassies!<br /> Wassie World is a 
               project focused on providing real life utility for all 
               its holders!
             </p>
