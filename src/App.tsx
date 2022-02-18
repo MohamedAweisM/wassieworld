@@ -1,4 +1,4 @@
-import { Header, Hero, About } from "./sections";
+import { Header, Hero, About, Roadmap } from "./sections";
 import styles from "./App.module.scss";
 import { useEffect, useState } from "react";
 import { useSolana } from "./hooks/useSolana";
@@ -73,6 +73,7 @@ const App = () => {
           updateCandyMachine={updateCandyMachine}
           connection={connection as Connection}/>
         <About />
+        <Roadmap />
       </main>
       {/* <Footer /> */}
     </>

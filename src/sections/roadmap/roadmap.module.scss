@@ -1,0 +1,48 @@
+@import '../../styles/partials';
+
+.container {
+  color: #252930;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 32px 0;
+}
+
+.content {
+  padding: 0 16px;
+  max-width: 1024px;
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
+.roadmap {
+  
+}
+
+.title {
+  margin: 16px 0;
+  font-size: 26px;
+  text-align: center;
+
+  @include tablet {
+    margin: 32px 0;
+    font-size: 40px;
+  }
+}
+
+.lilyPad {
+  width: 95%;
+  margin: 16px 0;
+
+  @include tablet {
+    width: 80%;
+    margin: 32px 0;
+  }
+
+  @include desktop {
+    width: 448px;
+    margin: 32px;
+  }
+}
