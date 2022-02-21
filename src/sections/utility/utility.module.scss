@@ -1,0 +1,99 @@
+@import '../../styles/partials';
+
+.container {
+  background: linear-gradient(to bottom, 
+  #dbeafe 0%, 
+  #dbeafe00 10%, 
+  #dbeafe00 90%, 
+  #dbeafe 100%), url(../../assets/utilityBG.png);
+  background-position: center;
+  background-size: cover;
+  color: #252930;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 32px 0;
+
+  @include desktop {
+    background: linear-gradient(to bottom, 
+    #dbeafe 0%, 
+    #dbeafe00 15%, 
+    #dbeafe00 85%, 
+    #dbeafe 100%), url(../../assets/utilityBG.png);
+    background-position: center;
+    background-size: cover;  
+  }
+}
+
+.content {
+  padding: 0 16px;
+  max-width: 1024px;
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
+.title {
+  margin: 12px 0;
+  font-size: 26px;
+  text-align: center;
+
+  @include tablet {
+    font-size: 40px;
+  }
+}
+
+.utility {
+  width: 100%;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.utilityPoint {
+  margin: 16px 0;
+  
+  @include tablet {
+    width: 320px;
+  }
+
+  @include tablet {
+    width: 280px;
+  }
+}
+
+.icon {
+  width: 20px;
+  display: inline-block;
+  margin-right: 12px;
+
+  @include tablet {
+    width: 24px;
+  }
+}
+
+.subtitle {
+  display: inline-block;
+  font-size: 18px;
+  margin: 12px 0;
+
+  @include tablet {
+    font-size: 24px;
+  }
+}
+
+.description {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  margin: 0px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
