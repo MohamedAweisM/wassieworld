@@ -1,4 +1,4 @@
-import { Header, Hero, About, Roadmap, Utility } from "./sections";
+import { Header, Hero, About, Roadmap, Utility, Team } from "./sections";
 import styles from "./App.module.scss";
 import { useEffect, useState } from "react";
 import { useSolana } from "./hooks/useSolana";
@@ -75,6 +75,7 @@ const App = () => {
         <About />
         <Roadmap />
         <Utility />
+        <Team />
       </main>
       {/* <Footer /> */}
     </>
