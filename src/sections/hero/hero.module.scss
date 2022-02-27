@@ -2,11 +2,16 @@
 
 .container {
   padding-top: 60px;
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
   width: 100%;
   display: flex;
   justify-content: center;
   text-align: center;
+
+  @include tablet {
+    padding-top: 75px;
+    min-height: calc(100vh - 75px);
+  }
 }
 
 .content {
@@ -53,18 +58,19 @@
 }
 
 .wassieGif {
+  width: 24vh;
   margin: 32px 0;
-  width: 200px;
+  max-width: 200px;
   border-radius: 10px;
 
   @include tablet {
-    width: 360px;
+    width: 36vh;
+    max-width: 360px;
   }
 
   @include desktop {
     width: 45vh;
-    min-width: 360px;
-    max-width: 600px;
+    max-width: 550px;
   }
 }
 

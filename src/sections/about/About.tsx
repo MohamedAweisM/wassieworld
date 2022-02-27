@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <img className={styles.aboutImage} src={aboutWassie} alt='about pic'/>
+        {/* <img className={styles.aboutImage} src={aboutWassie} alt='about pic'/> */}
         <div className={styles.about}>
           <h2 className={styles.title}> About </h2>
           <p>
