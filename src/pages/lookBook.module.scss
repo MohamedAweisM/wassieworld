@@ -1,0 +1,17 @@
+.sliderContainer {
+  overflow-x: scroll;
+}
+
+.slider {
+  display: flex;
+}
+
+.slide {
+  padding: 0 16px;
+}
+
+.traitImage {
+  max-width: 150px;
+  border-radius: 10px;
+}
+

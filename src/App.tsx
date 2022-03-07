@@ -6,6 +6,7 @@ import { useEnv } from "./hooks/useEnv";
 import { useInitializeStore } from "./utils/store";
 import { CandyMachineAccount } from "./utils/models";
 import { Connection } from "@solana/web3.js";
+import { LookBook } from "./pages";
 
 const App = () => {
   const { envError } = useEnv();
@@ -63,22 +64,23 @@ const App = () => {
   }
 
   return (
-    <>
-      <Header />
-        {/* candyMachine={candyMachine as CandyMachineAccount}
-        connection={connection as Connection}/> */}
-      <main>
-        <Hero
-          candyMachine={candyMachine as CandyMachineAccount}
-          updateCandyMachine={updateCandyMachine}
-          connection={connection as Connection}/>
-        <About />
-        <Roadmap />
-        <Utility />
-        <Team />
-      </main>
-      {/* <Footer /> */}
-    </>
+    // <>
+    //   <Header />
+    //     {/* candyMachine={candyMachine as CandyMachineAccount}
+    //     connection={connection as Connection}/> */}
+    //   <main>
+    //     <Hero
+    //       candyMachine={candyMachine as CandyMachineAccount}
+    //       updateCandyMachine={updateCandyMachine}
+    //       connection={connection as Connection}/>
+    //     <About />
+    //     <Roadmap />
+    //     <Utility />
+    //     <Team />
+    //   </main>
+    //   {/* <Footer /> */}
+    // </>
+    <LookBook />
   );
 };
 
