@@ -1,4 +1,22 @@
-.sliderContainer {
+@import '../styles/partials';
+
+.pageContainer {
+  padding-top: 60px;
+  // width: 100%;
+  // display: flex;
+  // justify-content: center;
+  // text-align: center;
+
+  @include tablet {
+    padding-top: 75px;
+  }
+}
+
+.pageContent {
+  padding: 0 16px;
+}
+
+.sliderContent {
   overflow-x: scroll;
 }
 

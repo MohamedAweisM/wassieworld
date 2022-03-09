@@ -44,8 +44,6 @@ import dressBlackWblackTie from "../../assets/LOOKBOOK/TOP/DRESS BLACK W BLACK T
 import blackTee from "../../assets/LOOKBOOK/TOP/BLACK TEE.png"
 import whiteTee from "../../assets/LOOKBOOK/TOP/WHITE TEE.png"
 
-
-
 export const top = {
   type: 'Top',
   list: [
