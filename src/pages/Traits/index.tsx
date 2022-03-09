@@ -6,7 +6,11 @@ import { hand } from "./hand";
 import { hat } from "./hat";
 import { neck } from "./neck";
 import { skin } from "./skin";
-
+import { top } from "./top";
+import { bottom } from "./bottom";
+import { shoes } from "./shoes";
+import { environment } from "./environment";
+ 
 export const allTraits = [
   background,
   skin,
@@ -16,4 +20,8 @@ export const allTraits = [
   neck,
   hand,
   coat,
+  top,
+  bottom,
+  shoes,
+  environment,
 ];
