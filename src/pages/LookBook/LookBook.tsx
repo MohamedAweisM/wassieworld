@@ -3,7 +3,6 @@ import { allTraits } from "./Traits";
 
 import styles from './lookBook.module.scss';
 import { Header } from "../components";
-import { Link } from "react-router-dom";
 
 const LookBook = () => {
   return (
