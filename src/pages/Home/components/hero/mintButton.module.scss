@@ -1,0 +1,36 @@
+@import '../../../styles/partials';
+
+.heroButton {
+  font-family: inherit;
+  height: 40px;
+  margin: 16px 0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px -4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 1px;
+
+  @include tablet {
+    font-size: 24px;
+    margin: 32px 0 16px;
+  }
+}
+
+.getPhantom, .connectWallet, .mint {
+  @extend .heroButton;
+
+  background-color: #0284C7;
+
+  &:hover {
+    background-color: #0369A1;
+  }
+}
+
+.soldOut, .insufficientFunds, .minting {
+  @extend .heroButton;
+
+  background-color: #9CA3AF;
+  cursor: not-allowed;
+}

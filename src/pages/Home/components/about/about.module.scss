@@ -1,0 +1,99 @@
+@import '../../../styles/partials';
+
+.container {
+  color: #252930;
+  background: linear-gradient(to bottom, 
+  #dbeafe 0%, 
+  #dbeafe00 10%, 
+  #dbeafe00 90%, 
+  #dbeafe 100%), url(../../../../assets/aboutBG.png);
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+
+  @include desktop {
+    background: linear-gradient(to bottom, 
+    #dbeafe 0%, 
+    #dbeafe00 15%, 
+    #dbeafe00 85%, 
+      #dbeafe 100%), url(../../../../assets/aboutBG.png);
+    background-position: bottom;
+    background-size: cover;
+  }
+}
+
+.content {
+  padding: 0 16px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  max-width: 1024px;
+  
+  // @include tablet {
+  //   flex-direction: row-reverse;
+
+  //   > * {
+  //     margin-left: 32px !important;
+  //     margin-right: 32px !important;
+
+  //     @include desktop {
+  //       margin-left: 64px !important;
+  //       margin-right: 64px !important;
+  //     }    
+  //   }
+  // }
+}
+
+.aboutImage {
+  width: 80px;
+  margin: 16px 0;
+
+  @include tablet {
+    width: 200px;
+    margin: 32px 0;
+  }
+
+  @include desktop {
+    width: 22vh;
+  }
+}
+
+.about {
+  // max-width: 800px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  > p {
+    margin: 8px 0;
+
+    > span, a {
+      color: #8566cf;
+    }
+  }
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.title {
+  margin: 12px 0;
+  font-size: 26px;
+  text-align: center;
+
+  @include tablet {
+    margin: 24px 0;
+    font-size: 40px;
+  }
+}
