@@ -1,7 +1,7 @@
 import morpheus from "../../../assets/LOOKBOOK/EYEWEAR/MORPHEUS.png";
 import missionPassed from "../../../assets/LOOKBOOK/EYEWEAR/MISSION PASSED.png";
-import elton from "../../../assets/LOOKBOOK/EYEWEAR/SPORT GLASSES.png";
-import sportGlasses from "../../../assets/LOOKBOOK/EYEWEAR/ELTON.png";
+import sportGlasses from "../../../assets/LOOKBOOK/EYEWEAR/SPORT GLASSES.png";
+import elton from "../../../assets/LOOKBOOK/EYEWEAR/ELTON.png";
 import lennons from "../../../assets/LOOKBOOK/EYEWEAR/LENNONS.png";
 import dealWithIt from "../../../assets/LOOKBOOK/EYEWEAR/DEAL WITH IT.png";
 
