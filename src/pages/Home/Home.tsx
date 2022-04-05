@@ -70,10 +70,10 @@ const App = () => {
         {/* candyMachine={candyMachine as CandyMachineAccount}
         connection={connection as Connection}/> */}
       <main>
-        <Hero
+        {/* <Hero
           candyMachine={candyMachine as CandyMachineAccount}
           updateCandyMachine={updateCandyMachine}
-          connection={connection as Connection}/>
+          connection={connection as Connection}/> */}
         <About />
         <Roadmap />
         <Utility />
