@@ -19,7 +19,7 @@ const Maintenance = () => {
         <div className={styles.links}>
           <p> In the meantime... </p>
           <a
-            href="https://discord.gg/VWKcFRKdjK"
+            href="https://docs.google.com/forms/d/1rosiFMVdatrPVIUOQWcmclCoop-T0wiq4FWmMJR4Lj0/edit#responses"
             target="_blank"
             rel="noreferrer">
             Click here to join the Phase 2 whitelist
