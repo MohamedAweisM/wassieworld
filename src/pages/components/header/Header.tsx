@@ -42,7 +42,7 @@ const Header = () => {
             rel="noreferrer">
             <img className={styles.socialIcon} src={discordLogo} alt="Discord logo"/>
           </a>
-          {/* <WalletConnect /> */}
+          <WalletConnect />
             {/* candyMachine={candyMachine}
             connection={connection}/> */}
         </div>
