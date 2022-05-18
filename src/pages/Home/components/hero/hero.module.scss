@@ -25,20 +25,20 @@
 .headings {
   > h2 {
     font-size: 26px;
-    margin: 0 0 16px 0;
+    margin: 0;
 
     @include tablet {
       font-size: 40px;
     }
   }
+}
 
-  > h3 {
-    font-size: 18px;
-    margin: 0;
+h3 {
+  font-size: 18px;
+  margin: 0;
 
-    @include tablet {
-      font-size: 30px;
-    }
+  @include tablet {
+    font-size: 30px;
   }
 }
 
@@ -91,6 +91,10 @@
     font-size: 24px;
     line-height: 28px;
   }
+
+  > p {
+    margin: 0;
+  }
 }
 
 .lookBookLink {
@@ -106,5 +110,33 @@
       padding: 0 8px;
       font-size: 14px;
     }
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+
+  @include tablet {
+    font-size: 24px;
+  }
+
+  > p {
+    margin: 8px 0;
+  }
+
+  > a {
+    margin: 2px;
+    color: #8566cf;
+    text-decoration: none;
+  }
+}
+
+.maintenance {
+  margin: 24px 0;
+
+  @include tablet {
+    margin: 36px 0;
   }
 }

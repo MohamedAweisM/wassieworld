@@ -1,12 +1,12 @@
 import { Routes, Route, HashRouter } from "react-router-dom";
 
-import { Home, LookBook, Maintenance } from "./pages";
+import { Home, LookBook } from "./pages";
 
 const App = () => {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/" element={<Maintenance />} />
+        <Route path="/" element={<Home />} />
         <Route path="/lookbook" element={<LookBook />} />
       </Routes>
     </HashRouter>
